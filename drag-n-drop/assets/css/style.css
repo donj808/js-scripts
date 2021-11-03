@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+  margin-top: 2em;
+}
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.section {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  
+}
+
+.container {
+  min-height: 3em;
+}
+
+.module {
+  margin: 1em;
+}
+
+.card.module {
+  margin-bottom: 1em;
+}
+
+.module {
+  background: white;
+}
+
+.sections, .button {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  text-align: center;
+  margin: 0 auto;
+  border: 2px dashed rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  
+}
+
+.card {
+  box-shadow: 6px 3px 12px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 6px 3px 12px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 6px 3px 12px 0 rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 6px 3px 12px 0 rgba(0, 0, 0, 0.05);
+}
