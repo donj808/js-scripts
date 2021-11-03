@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script> -->
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="calculator-container">
+					<div>
+						<h1 style="text-align:center;">What is your average monthly electrical cost?</h1>
+						<div class="rangeslider">
+							<div class="range-marker" for="foo" onforminput="value">$250</div>
+							<input id="bill" type="range" min="0" max="500" step="10" width="100%" name="bill"/>
+							<div style="text-align:center;font-size:18px;font-weight:normal;"><span>My average monthly electric bill is </span><span id="averageBill">$250</span></div>
+						</div>
+					</div>
+					<div class="" style="margin: 2em 0;text-align:center;">
+						<h2>How much shade does your house get?</h2>
+						<div class="radio-buttons">
+							<label class="radio-img">
+								<input type="radio" name="shades" value="1" />
+								<div class="circle"><div class="full-shade-orange"></div></div>
+							</label>
+							<div>None</div>
+						</div>
+
+						<div class="radio-buttons" style="padding-left:17%;padding-right:17%;">
+							<label class="radio-img">
+								<input type="radio" name="shades" value="2"/>
+								<div class="circle"><div class="half-shade"></div></div>
+							</label>
+							<div>A Little</div>
+						</div>
+							<div class="radio-buttons">
+							<label class="radio-img">
+								<input type="radio" name="shades" value="3" />
+								<div class="circle"><div class="full-shade-blue"></div></div>
+							</label>
+							<div>A Lot</div>
+						</div>
+					</div>
+				</div>
+					<div class="meter-counter" style="padding: 10%;min-height: 250px;background: #7db9e0;color: #fff;">
+						<div class="heading"><h1 class="text-shadow">Your Potential savings would be*</h1></div>
+						<div class="meter" >
+							<div class="meter-box-container">
+								<ul class="meter-box">
+								<li class="meter blocks meter-sign">$</li>
+								<li class="meter blocks meter-data" data-meter-index="5">0</li>
+								<li class="meter blocks meter-data" data-meter-index="4">0</li>
+								<li class="meter blocks meter-data" data-meter-index="3">0</li>
+								<li class="meter blocks meter-data" data-meter-index="2">0</li>
+								<li class="meter blocks meter-data" data-meter-index="1">0</li>
+								<li class="meter blocks meter-data" data-meter-index="0">0</li>
+								</ul>
+							</div>
+						</div>
+						<div class="meter-copy" style="margin-bottom:1em;">
+							<span>*based on 25 years</span>
+						</div> 
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/solar-calculator.js"></script>
+</body>
+</html>

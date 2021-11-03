@@ -1,0 +1,260 @@
+body {
+    background: #d8ebf6;
+}
+ul {
+    width: 100%;
+}
+li {
+    float: left;
+    width: 33%;
+}
+.container {
+  padding-top:50px;
+}
+.calculator-container {
+    padding: 2em 10% 1em;
+    margin: 0 auto;
+    background: #fff;
+}
+.text-shadow {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: -2px 2px #737070;
+    text-align: center;
+    padding-bottom: 2em;
+}
+#averageBill {
+    color: #007fbe;
+    font-weight: 900;
+}
+/** 
+ *
+ * Radio buttons
+ *
+ **/
+.radio-buttons {
+	display: inline-block;
+}
+.radio-img  > input { 
+  display:none;
+}
+.radio-img > input:checked + div.circle {
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px #7cb9e0;
+}
+.full-shade-orange {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #f9a501;
+}
+.full-shade-blue {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #1c528c;
+}
+.half-shade {
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(to right, #f9a501,#f9a501 50%, #1c528c 50%,  #1c528c);
+    border-radius: 50%;
+}
+
+/** 
+ *
+ * Range Slider 
+ *
+ **/
+input[type=range] {
+	-webkit-appearance: none;
+	margin: 18px 0;
+	width: 100%;
+}
+input[type=range]:focus {
+	outline: none;
+}
+/* track */
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 20px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: transparent;
+	/*background: #3a4b66;*/
+	/*   background: -webkit-linear-gradient(left, #3a4b66, #dfd0bd );  */
+	border-radius: 12px;
+	border: 0.2px solid #cbbbac;
+}
+/* pointer */
+input[type=range]::-webkit-slider-thumb {
+	box-shadow: 1px 1px 1px #0d0d0d, 0px 0px 1px #0d0d0d;
+	border: 9px solid #CCCCCC;
+	height: 36px;
+	width: 36px;
+	border-radius: 36px;
+	background: #3a4b66;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -9px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #3a4b66;
+}
+/* Firefox */
+input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 20px;
+	cursor: pointer;
+	animate: 0.2s;
+	/*   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+	background: #3071a9;
+	border-radius: 10px;
+	border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 10px;
+	background: #3071a9;
+	cursor: pointer;
+}
+/* IE */
+input[type=range]::-ms-track {
+	width: 100%;
+	height: 10px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: transparent;
+	border-color: transparent;
+	border-width: 16px;
+	color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+	background: #3a4b66;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+	background: #dfd0bd;
+	border: 0.2px solid #010101;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+	background: #3a4b66;
+}
+input[type=range]:focus::-ms-fill-upper {
+	background: transparent;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0.15, #3a4b66),
+        color-stop(0.15, #d8c8b4)
+    );
+    border-radius: 15px;
+}
+.rangeslider {
+    width: 100%;
+    margin: 0;
+    padding-top: 2em;
+}
+.range-marker { 
+	position: relative;
+	background: #3a4b66;
+	width: 70px; 
+	height: 35px; 
+	text-align: center; 
+	color: white; 
+	border-radius: 10px; 
+	display: inline-block; 
+	font: bold 15px/30px Georgia;
+	top: -10px;
+	left: 0;
+	margin-left: 42%;
+}
+.range-marker:after { 
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #3a4b66;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	margin-top: -1px;
+}
+
+/** 
+ *
+ * Meter Counters
+ *
+ **/
+.meter-container {
+    padding: 1em 10% 1em;
+    min-height: 250px;
+    background: #7db9e0;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.meter-box-container {
+    border-radius: 8px;
+    background:#0074bb;
+    padding:20px;
+    width:100%;
+    margin:0 auto;
+}
+ul.meter-box {
+    display: flex;
+    list-style:none;
+    padding:0;
+    margin:0;
+    color:#f7921e;
+    font-size:45px;
+    font-weight:900;
+    text-align: center;
+    border-radius:8px;
+    width:100%;
+    height:100px;
+    vertical-align:middle;
+}
+.meter.blocks {
+    float: left;
+    height: 100%;
+    width: 12.5%;
+    background: #fff;
+    margin: 0 10px;
+    padding-top: 20px;
+    border-radius: 8px;
+    box-shadow: 3px -3px #969696;
+}
+.meter.first {
+    margin-left: 0;
+}
+.meter.last {
+    margin-right: 0;
+}
+.meter-data {
+    display: inline-block;
+}
